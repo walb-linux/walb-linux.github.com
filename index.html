@@ -208,14 +208,12 @@ while underlying storage caches will help it.</li>
 </ul>
 
 <h3>
-<a id="log-structured-file-systems" class="anchor" href="#log-structured-file-systems" aria-hidden="true"><span class="octicon octicon-link"></span></a>Log-structured file systems</h3>
+<a id="log-structured-file-systems" class="anchor" href="#log-structured-file-systems" aria-hidden="true"><span class="octicon octicon-link"></span></a>Log-structured file systems and Copy-on-Write file systems</h3>
 
 <p>Ex. nilfs, btrfs, (or ZFS).</p>
 
 <ul>
-<li>WalB is a block-level solution, not a file system one.</li>
-<li>If you use whichever file system, you can backup your data incrementally
-and replicate them asynchronously using an underlying walb device.</li>
+  <li>These file systems provide features which are similar to WalB. However, since WalB is a block-level solution, you can backup your data incrementally and replicate them asynchronously in any file systems with an underlying walb device.</li>
 </ul>
 
 <h2>
